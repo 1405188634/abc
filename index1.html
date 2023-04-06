@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+  </head>
+  <body>	
+	<script>
+     //登录注册功能
+     
+     let user = null
+     let pass = null
+     
+     caidan()
+     
+     
+    
+     //菜单页
+     function caidan(){
+        let is = prompt("请选择:\n1.注册\n2.登录")
+         if(is == 1){
+           zhuce()
+           
+           }
+         if(is == 2){
+           denglu()
+           
+           }
+     
+     }
+ 
+ 
+ 
+ 
+     //登录功能
+     function denglu(){
+         let inUser = prompt("请输入账号")
+         let inpass = prompt("请输入密码")  
+         
+         if(inUser==user && inPass==pass){
+           
+           alert("登录成功"+user)
+           
+           
+           }else
+         alert("密码或账号输入错误,请重新输入")
+           denglu()
+     
+     }
+ 
+     //注册功能
+     function zhuce(){
+         user = prompt("请输入您要注册的账号")
+         pass = prompt("请输入密码")
+         alert("注册成功")
+         caidan()
+     }
+ 
+ 
+ 
+ 
+ 
+ 
+ </script>
+ 
+ 
+
+  </body>
+</html>
+
+<style>
+ 
+ img{
+   width:300px;
+   margin-left:40px;
+   margin-top:100px;
+   }
+
+
+
+
+</style>
+
+
+<pre>
+
+
+<img src="6.gif"/>
+
+
+
+
+
+</pre>
